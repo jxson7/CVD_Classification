@@ -15147,8 +15147,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Importing all required libraries</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -15160,25 +15159,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">StratifiedKFold</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div id="cell-id=a1d42778" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
@@ -15889,13 +15870,13 @@ class="
 <span class="c1"># Define age ranges</span>
 <span class="n">age_ranges</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;18-30&#39;</span><span class="p">,</span> <span class="s1">&#39;31-40&#39;</span><span class="p">,</span> <span class="s1">&#39;41-50&#39;</span><span class="p">,</span> <span class="s1">&#39;51-60&#39;</span><span class="p">,</span> <span class="s1">&#39;61-70&#39;</span><span class="p">,</span> <span class="s1">&#39;71+&#39;</span><span class="p">]</span>
 
-<span class="c1"># Categorize ages into age ranges</span>
+<span class="c1"># Categorise ages into age ranges</span>
 <span class="n">age_category</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">age_data</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)],</span> <span class="n">labels</span><span class="o">=</span><span class="n">age_ranges</span><span class="p">)</span>
 
 <span class="c1"># Count the number of occurrences for each age range</span>
 <span class="n">age_counts</span> <span class="o">=</span> <span class="n">age_category</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 
-<span class="c1"># Plot the age distribution as a pie chart</span>
+<span class="c1"># Age distribution as a pie chart</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">age_counts</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">age_ranges</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Age Distribution&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -15940,19 +15921,11 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-
-
-<span class="c1"># Filter numeric columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter numeric columns</span>
 <span class="n">numeric_columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;number&#39;</span><span class="p">)</span>
 
-<span class="c1"># Generate a correlation matrix</span>
 <span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">numeric_columns</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 
-<span class="c1"># Create a heatmap</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Correlation Heatmap - Framingham Dataset&#39;</span><span class="p">)</span>
@@ -16000,11 +15973,8 @@ class="
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Select only the specified rows</span>
 <span class="n">selected_rows</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">31</span><span class="p">:</span><span class="mi">39</span><span class="p">]</span>
-
-<span class="c1"># Generate a correlation matrix for the selected rows</span>
 <span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">selected_rows</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 
-<span class="c1"># Create a heatmap</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Correlation Heatmap - Selected Rows - Framingham Dataset&#39;</span><span class="p">)</span>
@@ -16050,11 +16020,9 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Drop columns with correlation score greater than 0.84</span>
-<span class="n">high_correlation_cols</span> <span class="o">=</span> <span class="n">correlation_matrix</span><span class="p">[</span><span class="n">correlation_matrix</span> <span class="o">&gt;</span> <span class="mf">0.84</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">high_correlation_cols</span> <span class="o">=</span> <span class="n">correlation_matrix</span><span class="p">[</span><span class="n">correlation_matrix</span> <span class="o">&gt;</span> <span class="mf">0.84</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">1</span>
 <span class="n">df_fil</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">high_correlation_cols</span><span class="p">[</span><span class="n">high_correlation_cols</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 
-<span class="c1"># Display the filtered DataFrame</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_fil</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 <span class="n">df_fil</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -16290,13 +16258,12 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter numeric columns</span>
-<span class="n">numeric_columns2</span> <span class="o">=</span> <span class="n">df_fil</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;number&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numeric_columns2</span> <span class="o">=</span> <span class="n">df_fil</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;number&#39;</span><span class="p">)</span>
 
-<span class="c1"># Generate a correlation matrix</span>
+
 <span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">numeric_columns2</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 
-<span class="c1"># Create a heatmap</span>
+
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Correlation Heatmap - Framingham Dataset: Post Filtration&#39;</span><span class="p">)</span>
@@ -16342,10 +16309,9 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter the &#39;TOTCHOL&#39; column</span>
-<span class="n">cholesterol_levels</span> <span class="o">=</span> <span class="n">df_fil</span><span class="p">[</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cholesterol_levels</span> <span class="o">=</span> <span class="n">df_fil</span><span class="p">[</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">]</span>
 
-<span class="c1"># Plot the histogram</span>
+<span class="c1"># Histogram</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">cholesterol_levels</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Cholesterol Levels&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
@@ -16489,13 +16455,10 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Extract age and TOTCHOL columns</span>
-<span class="n">age_chol</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;AGE&#39;</span><span class="p">,</span> <span class="s1">&#39;TOTCHOL&#39;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age_chol</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;AGE&#39;</span><span class="p">,</span> <span class="s1">&#39;TOTCHOL&#39;</span><span class="p">]]</span>
 
-<span class="c1"># Sort the data by age</span>
 <span class="n">age_chol</span> <span class="o">=</span> <span class="n">age_chol</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;AGE&#39;</span><span class="p">)</span>
 
-<span class="c1"># Create a line plot</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">age_chol</span><span class="p">[</span><span class="s1">&#39;AGE&#39;</span><span class="p">],</span> <span class="n">age_chol</span><span class="p">[</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Age&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cholesterol Levels&#39;</span><span class="p">)</span>
@@ -16546,16 +16509,12 @@ class="
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-<span class="c1"># Assuming you have the Framingham dataset in a DataFrame called &#39;df&#39;</span>
-
-<span class="c1"># Count plot: Gender</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;SEX&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_fil</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Gender&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Count of Gender&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="c1"># Count plot: Smoking Status</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;CURSMOKE&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_fil</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Smoking Status&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
@@ -16609,38 +16568,6 @@ class="
 
 </div>
 
-</div><div id="cell-id=f5b6bfc6" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># # Filter the required columns</span>
-<span class="c1"># df = df[[&#39;AGE&#39;, &#39;SYSBP&#39;]]</span>
-
-<span class="c1"># # Remove rows with missing values</span>
-<span class="c1"># df = df.dropna()</span>
-
-<span class="c1"># # Create age blocks</span>
-<span class="c1"># df[&#39;age_block&#39;] = pd.cut(df[&#39;AGE&#39;], bins=range(10, 100, 10), right=False)</span>
-
-<span class="c1"># # Create the box plot</span>
-<span class="c1"># plt.figure(figsize=(10, 6))</span>
-<span class="c1"># sns.boxplot(data=df, x=&#39;age_block&#39;, y=&#39;SYSBP&#39;)</span>
-<span class="c1"># plt.title(&#39;Systolic Blood Pressure by Age Block&#39;)</span>
-<span class="c1"># plt.xlabel(&#39;Age Block&#39;)</span>
-<span class="c1"># plt.ylabel(&#39;Systolic Blood Pressure&#39;)</span>
-<span class="c1"># plt.xticks(rotation=45)</span>
-<span class="c1"># plt.show()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div><div id="cell-id=1d97f9fe" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16653,23 +16580,14 @@ class="
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-<span class="c1"># Assuming you have already loaded the data into the &#39;df&#39; DataFrame</span>
-
-<span class="c1"># Filter the required columns</span>
 <span class="n">df_agesys</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;AGE&#39;</span><span class="p">,</span> <span class="s1">&#39;SYSBP&#39;</span><span class="p">]]</span>
 
-<span class="c1"># Remove rows with missing values</span>
 <span class="n">df_agesys</span> <span class="o">=</span> <span class="n">df_agesys</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 
-<span class="c1"># Create age blocks</span>
 <span class="n">df_agesys</span><span class="p">[</span><span class="s1">&#39;age_block&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df_agesys</span><span class="p">[</span><span class="s1">&#39;AGE&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">right</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="c1"># Define the color palette you want to use</span>
-<span class="c1"># You can choose any Seaborn or Matplotlib color palette, or even specify custom colors as a list of HEX values</span>
-<span class="c1"># For this example, I&#39;ll use the &#39;muted&#39; color palette, but you can change it as per your preference</span>
 <span class="n">color_palette</span> <span class="o">=</span> <span class="s1">&#39;muted&#39;</span>
 
-<span class="c1"># Create the box plot with the specified color palette</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_agesys</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;age_block&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SYSBP&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">color_palette</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Systolic Blood Pressure by Age Block&#39;</span><span class="p">)</span>
@@ -16921,18 +16839,16 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter the required columns</span>
-<span class="n">df_comp</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;CIGPDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;SYSBP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABP&#39;</span><span class="p">,</span><span class="s1">&#39;CURSMOKE&#39;</span><span class="p">,</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">,</span><span class="s1">&#39;HDLC&#39;</span><span class="p">,</span><span class="s1">&#39;LDLC&#39;</span><span class="p">,</span><span class="s1">&#39;BMI&#39;</span><span class="p">,</span> <span class="s1">&#39;GLUCOSE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABETES&#39;</span><span class="p">,</span><span class="s1">&#39;PREVAP&#39;</span><span class="p">,</span><span class="s1">&#39;PREVCHD&#39;</span><span class="p">,</span> <span class="s1">&#39;PREVMI&#39;</span><span class="p">,</span><span class="s1">&#39;PREVSTRK&#39;</span><span class="p">,</span> <span class="s1">&#39;PREVHYP&#39;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_comp</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;CIGPDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;SYSBP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABP&#39;</span><span class="p">,</span><span class="s1">&#39;CURSMOKE&#39;</span><span class="p">,</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">,</span><span class="s1">&#39;HDLC&#39;</span><span class="p">,</span><span class="s1">&#39;LDLC&#39;</span><span class="p">,</span><span class="s1">&#39;BMI&#39;</span><span class="p">,</span> <span class="s1">&#39;GLUCOSE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABETES&#39;</span><span class="p">,</span><span class="s1">&#39;PREVAP&#39;</span><span class="p">,</span><span class="s1">&#39;PREVCHD&#39;</span><span class="p">,</span> <span class="s1">&#39;PREVMI&#39;</span><span class="p">,</span><span class="s1">&#39;PREVSTRK&#39;</span><span class="p">,</span> <span class="s1">&#39;PREVHYP&#39;</span><span class="p">]]</span>
 
-<span class="c1"># Remove rows with missing values</span>
 <span class="n">df_comp</span> <span class="o">=</span> <span class="n">df_comp</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 
-<span class="c1"># Calculate the correlation matrix</span>
+
 <span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">df_comp</span><span class="p">[[</span><span class="s1">&#39;CIGPDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;SYSBP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABP&#39;</span><span class="p">,</span><span class="s1">&#39;CURSMOKE&#39;</span><span class="p">,</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">,</span><span class="s1">&#39;HDLC&#39;</span><span class="p">,</span><span class="s1">&#39;LDLC&#39;</span><span class="p">,</span><span class="s1">&#39;BMI&#39;</span><span class="p">,</span> <span class="s1">&#39;GLUCOSE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABETES&#39;</span><span class="p">,</span><span class="s1">&#39;PREVAP&#39;</span><span class="p">,</span><span class="s1">&#39;PREVCHD&#39;</span><span class="p">,</span> <span class="s1">&#39;PREVMI&#39;</span><span class="p">,</span><span class="s1">&#39;PREVSTRK&#39;</span><span class="p">,</span> <span class="s1">&#39;PREVHYP&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 
-<span class="c1"># Display the correlation matrix</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">)</span>
-<span class="c1"># Create a heatmap-style correlation matrix</span>
+
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;rocket&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Correlation Matrix For Key Features in Dataset&quot;</span><span class="p">)</span>
@@ -17053,18 +16969,13 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter the required columns</span>
-<span class="n">df_comp</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;CIGPDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;SYSBP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABP&#39;</span><span class="p">,</span><span class="s1">&#39;CURSMOKE&#39;</span><span class="p">,</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">,</span><span class="s1">&#39;HDLC&#39;</span><span class="p">,</span><span class="s1">&#39;LDLC&#39;</span><span class="p">,</span><span class="s1">&#39;BMI&#39;</span><span class="p">,</span> <span class="s1">&#39;GLUCOSE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABETES&#39;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_comp</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;CIGPDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;SYSBP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABP&#39;</span><span class="p">,</span><span class="s1">&#39;CURSMOKE&#39;</span><span class="p">,</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">,</span><span class="s1">&#39;HDLC&#39;</span><span class="p">,</span><span class="s1">&#39;LDLC&#39;</span><span class="p">,</span><span class="s1">&#39;BMI&#39;</span><span class="p">,</span> <span class="s1">&#39;GLUCOSE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABETES&#39;</span><span class="p">]]</span>
 
-<span class="c1"># Remove rows with missing values</span>
 <span class="n">df_comp</span> <span class="o">=</span> <span class="n">df_comp</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 
-<span class="c1"># Calculate the correlation matrix</span>
 <span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">df_comp</span><span class="p">[[</span><span class="s1">&#39;CIGPDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;SYSBP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABP&#39;</span><span class="p">,</span><span class="s1">&#39;CURSMOKE&#39;</span><span class="p">,</span><span class="s1">&#39;TOTCHOL&#39;</span><span class="p">,</span><span class="s1">&#39;HDLC&#39;</span><span class="p">,</span><span class="s1">&#39;LDLC&#39;</span><span class="p">,</span><span class="s1">&#39;BMI&#39;</span><span class="p">,</span> <span class="s1">&#39;GLUCOSE&#39;</span><span class="p">,</span><span class="s1">&#39;DIABETES&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 
-<span class="c1"># Display the correlation matrix</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">)</span>
-<span class="c1"># Create a heatmap-style correlation matrix</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;rocket&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Correlation Matrix For Key Features in Dataset&quot;</span><span class="p">)</span>
@@ -17238,8 +17149,6 @@ class="
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-
-<span class="c1"># Split the data into features (X) and target variable (y)</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df_fil</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;PREVCHD&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df_fil</span><span class="p">[</span><span class="s1">&#39;PREVCHD&#39;</span><span class="p">]</span>
 
@@ -17260,9 +17169,7 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define base classifiers</span>
-<span class="c1"># rf_classifier_pre = RandomForestClassifier()</span>
-<span class="n">svm_classifier_pre</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">svm_classifier_pre</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">lr_classifier_pre</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
 <span class="n">nb_classifier_pre</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
 <span class="n">KNN_pre</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
@@ -17270,25 +17177,19 @@ class="
 <span class="n">dt_classifier_pre</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
 
 
-<span class="c1"># Create a list of tuples for the base classifiers</span>
+
 <span class="n">base_classifiers</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;Decision Tree&#39;</span><span class="p">,</span> <span class="n">dt_classifier_pre</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;SVM&#39;</span><span class="p">,</span> <span class="n">svm_classifier_pre</span><span class="p">),(</span><span class="s1">&#39;Naive Bayes&#39;</span><span class="p">,</span> <span class="n">nb_classifier_pre</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Logistic Regression&#39;</span><span class="p">,</span> <span class="n">lr_classifier_pre</span><span class="p">),(</span><span class="s1">&#39;KNN&#39;</span><span class="p">,</span> <span class="n">KNN_pre</span><span class="p">)]</span>
 
-<span class="c1"># Iterate over base classifiers</span>
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">classifier</span> <span class="ow">in</span> <span class="n">base_classifiers</span><span class="p">:</span>
-    <span class="c1"># Train the classifier</span>
+
     <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-    
-    <span class="c1"># Make predictions on the test set</span>
+
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-    
-    <span class="c1"># Calculate the accuracy of the classifier</span>
+
     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-    
-    <span class="c1"># Create a confusion matrix</span>
+
     <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     <span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-    
-    <span class="c1"># Print the evaluation metrics</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Classifier (Pre-Validation):&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy:&#39;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Confusion Matrix:&#39;</span><span class="p">)</span>
@@ -17422,89 +17323,76 @@ weighted avg       0.87      0.91      0.89      2326
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># from sklearn.neighbors import KNeighborsClassifier</span>
-<span class="c1"># from sklearn.model_selection import GridSearchCV</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
 
-<span class="c1"># # KNN hyperparameters</span>
-<span class="c1"># knn_params = {</span>
-<span class="c1">#     &#39;n_neighbors&#39;: [3, 5, 7, 9],</span>
-<span class="c1">#     &#39;weights&#39;: [&#39;uniform&#39;, &#39;distance&#39;],</span>
-<span class="c1">#     &#39;metric&#39;: [&#39;euclidean&#39;, &#39;manhattan&#39;]</span>
-<span class="c1"># }</span>
+<span class="n">knn_params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="s1">&#39;weights&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;metric&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="s1">&#39;manhattan&#39;</span><span class="p">]</span>
+<span class="p">}</span>
 
-<span class="c1"># # Define hyperparameter grids for each classifier</span>
 
-<span class="c1"># # DT hyperparameters</span>
-<span class="c1"># dt_params = {</span>
-<span class="c1">#     &#39;max_depth&#39;: [None, 10, 20, 30],</span>
-<span class="c1">#     &#39;min_samples_split&#39;: [2, 5, 10],</span>
-<span class="c1">#     &#39;min_samples_leaf&#39;: [1, 2, 4]</span>
-<span class="c1"># }</span>
+<span class="n">dt_params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
+    <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="p">}</span>
 
-<span class="c1"># # # Random Forest hyperparameters</span>
-<span class="c1"># # rf_params = {</span>
-<span class="c1"># #     &#39;n_estimators&#39;: [50, 100, 200],</span>
-<span class="c1"># #     &#39;max_depth&#39;: [None, 10, 20, 30],</span>
-<span class="c1"># #     &#39;min_samples_split&#39;: [2, 5, 10],</span>
-<span class="c1"># #     &#39;min_samples_leaf&#39;: [1, 2, 4]</span>
-<span class="c1"># # }</span>
 
-<span class="c1"># # SVM hyperparameters</span>
-<span class="c1"># svm_params = {</span>
-<span class="c1">#     &#39;C&#39;: [0.1, 1, 10],</span>
-<span class="c1">#     &#39;gamma&#39;: [1, 0.1, 0.01],</span>
-<span class="c1"># #     &#39;kernel&#39;: [&#39;linear&#39;, &#39;rbf&#39;]</span>
-<span class="c1"># }</span>
 
-<span class="c1"># # Logistic Regression hyperparameters</span>
-<span class="c1"># lr_params = {</span>
-<span class="c1">#     &#39;C&#39;: [0.1, 1, 10],</span>
-<span class="c1">#     &#39;penalty&#39;: [&#39;l1&#39;, &#39;l2&#39;]</span>
-<span class="c1"># }</span>
+<span class="n">svm_params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">],</span>
+<span class="p">}</span>
 
-<span class="c1"># # Naive Bayes hyperparameters</span>
-<span class="c1"># nb_params = {</span>
-<span class="c1">#     &#39;var_smoothing&#39;: [1e-9, 1e-8, 1e-7]</span>
-<span class="c1"># }</span>
+<span class="n">lr_params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;penalty&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;l1&#39;</span><span class="p">,</span> <span class="s1">&#39;l2&#39;</span><span class="p">]</span>
+<span class="p">}</span>
 
-<span class="c1"># # Create a dictionary to hold the classifiers and their respective hyperparameter grids</span>
-<span class="c1"># classifiers_with_params = [</span>
-<span class="c1">#     (&#39;Decision Trees&#39;, dt_classifier_pre, dt_params),</span>
-<span class="c1">#     (&#39;SVM&#39;, svm_classifier_pre, svm_params),</span>
-<span class="c1">#     (&#39;Naive Bayes&#39;, nb_classifier_pre, nb_params),</span>
-<span class="c1">#     (&#39;Logistic Regression&#39;, lr_classifier_pre, lr_params),</span>
-<span class="c1">#     (&#39;KNN&#39;, KNN_pre, knn_params)</span>
-<span class="c1"># ]</span>
 
-<span class="c1"># # Iterate over classifiers</span>
-<span class="c1"># for name, classifier, params in classifiers_with_params:</span>
-<span class="c1">#     grid_search = GridSearchCV(estimator=classifier, param_grid=params, cv=5, n_jobs=-1, verbose=1)</span>
+<span class="n">nb_params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;var_smoothing&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1e-9</span><span class="p">,</span> <span class="mf">1e-8</span><span class="p">,</span> <span class="mf">1e-7</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">classifiers_with_params</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;Decision Trees&#39;</span><span class="p">,</span> <span class="n">dt_classifier_pre</span><span class="p">,</span> <span class="n">dt_params</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;SVM&#39;</span><span class="p">,</span> <span class="n">svm_classifier_pre</span><span class="p">,</span> <span class="n">svm_params</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Naive Bayes&#39;</span><span class="p">,</span> <span class="n">nb_classifier_pre</span><span class="p">,</span> <span class="n">nb_params</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Logistic Regression&#39;</span><span class="p">,</span> <span class="n">lr_classifier_pre</span><span class="p">,</span> <span class="n">lr_params</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;KNN&#39;</span><span class="p">,</span> <span class="n">KNN_pre</span><span class="p">,</span> <span class="n">knn_params</span><span class="p">)</span>
+<span class="p">]</span>
+
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">classifier</span><span class="p">,</span> <span class="n">params</span> <span class="ow">in</span> <span class="n">classifiers_with_params</span><span class="p">:</span>
+    <span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">classifier</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     
-<span class="c1">#     # Fit the grid search to the data</span>
-<span class="c1">#     grid_search.fit(X_train, y_train)</span>
+   
+    <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
     
-<span class="c1">#     # Get the best estimator</span>
-<span class="c1">#     best_classifier = grid_search.best_estimator_</span>
+
+    <span class="n">best_classifier</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
     
-<span class="c1">#     # Make predictions using the best model</span>
-<span class="c1">#     y_pred = best_classifier.predict(X_test)</span>
+
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
     
-<span class="c1">#     # Calculate the accuracy of the classifier</span>
-<span class="c1">#     accuracy = accuracy_score(y_test, y_pred)</span>
+
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     
-<span class="c1">#     # Create a confusion matrix</span>
-<span class="c1">#     cm = confusion_matrix(y_test, y_pred)</span>
-<span class="c1">#     report = classification_report(y_test, y_pred)</span>
+
+    <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     
-<span class="c1">#     # Print the evaluation metrics and best parameters</span>
-<span class="c1">#     print(&#39;Classifier (Post-Validation):&#39;, name)</span>
-<span class="c1">#     print(&#39;Best Parameters:&#39;, grid_search.best_params_)</span>
-<span class="c1">#     print(&#39;Accuracy:&#39;, accuracy)</span>
-<span class="c1">#     print(&#39;Confusion Matrix:&#39;)</span>
-<span class="c1">#     print(cm)</span>
-<span class="c1">#     print(&#39;Evaluation Report:&#39;)</span>
-<span class="c1">#     print(report)</span>
-<span class="c1">#     print(&quot;----------------NEXT MODEL---------------&quot;)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Classifier (Post-Validation):&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Best Parameters:&#39;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy:&#39;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Confusion Matrix:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cm</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Evaluation Report:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----------------NEXT MODEL---------------&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17644,7 +17532,7 @@ weighted avg       0.91      0.92      0.89      2326
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
 
-<span class="c1"># Define base classifiers</span>
+
 <span class="n">rf_classifier_pre</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
 <span class="n">dt_classifier_pre</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
 <span class="n">svm_classifier_pre</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -17654,21 +17542,18 @@ weighted avg       0.91      0.92      0.89      2326
 <span class="n">XGBClassifier_pre</span> <span class="o">=</span> <span class="n">XGBClassifier</span><span class="p">()</span>
 
 
-<span class="c1"># KNN hyperparameters</span>
 <span class="n">knn_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
     <span class="s1">&#39;weights&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
     <span class="s1">&#39;metric&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="s1">&#39;manhattan&#39;</span><span class="p">]</span>
 <span class="p">}</span>
 
-<span class="c1"># DT hyperparameters</span>
+
 <span class="n">dt_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]}</span>
 
 
-<span class="c1"># Define hyperparameter grids for each classifier</span>
 
-<span class="c1"># Random Forest hyperparameters</span>
 <span class="n">rf_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">],</span>
     <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
@@ -17676,20 +17561,19 @@ weighted avg       0.91      0.92      0.89      2326
     <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 <span class="p">}</span>
 
-<span class="c1"># SVM hyperparameters</span>
+
 <span class="n">svm_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
     <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">],</span>
-<span class="c1">#     &#39;kernel&#39;: [&#39;linear&#39;, &#39;rbf&#39;]</span>
+
 <span class="p">}</span>
 
-<span class="c1"># Logistic Regression hyperparameters</span>
+
 <span class="n">lr_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
     <span class="s1">&#39;penalty&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;l1&#39;</span><span class="p">,</span> <span class="s1">&#39;l2&#39;</span><span class="p">]</span>
 <span class="p">}</span>
 
-<span class="c1"># Naive Bayes hyperparameters</span>
 <span class="n">nb_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;var_smoothing&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1e-9</span><span class="p">,</span> <span class="mf">1e-8</span><span class="p">,</span> <span class="mf">1e-7</span><span class="p">]</span>
 <span class="p">}</span>
@@ -17702,7 +17586,6 @@ weighted avg       0.91      0.92      0.89      2326
     <span class="s1">&#39;colsample_bytree&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span>
 <span class="p">}</span>
 
-<span class="c1"># Create a dictionary to hold the classifiers and their respective hyperparameter grids</span>
 <span class="n">classifiers_with_params</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="s1">&#39;Decision Trees&#39;</span><span class="p">,</span> <span class="n">dt_classifier_pre</span><span class="p">,</span> <span class="n">dt_params</span><span class="p">),</span>
     <span class="p">(</span><span class="s1">&#39;SVM&#39;</span><span class="p">,</span> <span class="n">svm_classifier_pre</span><span class="p">,</span> <span class="n">svm_params</span><span class="p">),</span>
@@ -17718,24 +17601,23 @@ weighted avg       0.91      0.92      0.89      2326
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">classifier</span><span class="p">,</span> <span class="n">params</span> <span class="ow">in</span> <span class="n">classifiers_with_params</span><span class="p">:</span>
     <span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">classifier</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     
-    <span class="c1"># Fit the grid search to the data</span>
+ 
     <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
     
-    <span class="c1"># Get the best estimator</span>
+
     <span class="n">best_classifier</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
     
-    <span class="c1"># Make predictions using the best model</span>
+   
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
     
-    <span class="c1"># Calculate the accuracy of the classifier</span>
     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     
-    <span class="c1"># Create a confusion matrix</span>
+   
     <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     <span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     <span class="n">cv_results_dict</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">[</span><span class="s1">&#39;mean_test_score&#39;</span><span class="p">]</span>
     
-    <span class="c1"># Print the evaluation metrics and best parameters</span>
+   
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------- MODEL----------------&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Classifier (Post-Validation):&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Best Parameters:&#39;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
@@ -17745,7 +17627,7 @@ weighted avg       0.91      0.92      0.89      2326
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Evaluation Report:&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
 
-<span class="c1"># Generate a box and whiskers plot for each model</span>
+
 <span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">cv_results_dict</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">vert</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">patch_artist</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cv_results_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">cv_results_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="s1">&#39;vertical&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">)</span>
@@ -17961,8 +17843,7 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Split the data into features (X) and target variable (y)</span>
-<span class="n">X_chd</span> <span class="o">=</span> <span class="n">df_fil</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;PREVCHD&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_chd</span> <span class="o">=</span> <span class="n">df_fil</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;PREVCHD&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Y_chd</span> <span class="o">=</span> <span class="n">df_fil</span><span class="p">[</span><span class="s1">&#39;PREVCHD&#39;</span><span class="p">]</span>
 
 <span class="c1"># Split the data into 80% training + validation set and 20% testing set</span>
@@ -17988,7 +17869,6 @@ class="
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
 
-<span class="c1"># Define base classifiers</span>
 <span class="n">rf_classifier</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
 <span class="n">dt_classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
 <span class="n">svm_classifier</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -17997,24 +17877,17 @@ class="
 <span class="n">KNN</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
 <span class="n">XGBClassifier</span> <span class="o">=</span> <span class="n">XGBClassifier</span><span class="p">()</span>
 
-<span class="c1"># Define hyperparameter grids for each classifier</span>
-
-
-<span class="c1"># KNN hyperparameters</span>
 <span class="n">knn_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
     <span class="s1">&#39;weights&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
     <span class="s1">&#39;metric&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="s1">&#39;manhattan&#39;</span><span class="p">]</span>
 <span class="p">}</span>
 
-<span class="c1"># DT hyperparameters</span>
 <span class="n">dt_params</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]}</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<span class="p">}</span>
 
 
-
-
-<span class="c1"># Random Forest hyperparameters</span>
 <span class="n">rf_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">],</span>
     <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
@@ -18022,20 +17895,18 @@ class="
     <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 <span class="p">}</span>
 
-<span class="c1"># SVM hyperparameters</span>
+
 <span class="n">svm_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
     <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">],</span>
-<span class="c1">#     &#39;kernel&#39;: [&#39;linear&#39;, &#39;rbf&#39;]</span>
 <span class="p">}</span>
 
-<span class="c1"># Logistic Regression hyperparameters</span>
+
 <span class="n">lr_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
     <span class="s1">&#39;penalty&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;l1&#39;</span><span class="p">,</span> <span class="s1">&#39;l2&#39;</span><span class="p">]</span>
 <span class="p">}</span>
 
-<span class="c1"># Naive Bayes hyperparameters</span>
 <span class="n">nb_params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;var_smoothing&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1e-9</span><span class="p">,</span> <span class="mf">1e-8</span><span class="p">,</span> <span class="mf">1e-7</span><span class="p">]</span>
 <span class="p">}</span>
@@ -18048,7 +17919,6 @@ class="
     <span class="s1">&#39;colsample_bytree&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span>
 <span class="p">}</span>
 
-<span class="c1"># Create a dictionary to hold the classifiers and their respective hyperparameter grids</span>
 <span class="n">classifiers_with_params</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="s1">&#39;Decision Trees&#39;</span><span class="p">,</span> <span class="n">dt_classifier</span><span class="p">,</span> <span class="n">dt_params</span><span class="p">),</span>
     <span class="p">(</span><span class="s1">&#39;SVM&#39;</span><span class="p">,</span> <span class="n">svm_classifier</span><span class="p">,</span> <span class="n">svm_params</span><span class="p">),</span>
@@ -18063,25 +17933,13 @@ class="
 <span class="n">cv_results_dict_val</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">classifier</span><span class="p">,</span> <span class="n">params</span> <span class="ow">in</span> <span class="n">classifiers_with_params</span><span class="p">:</span>
     <span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">classifier</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-    
-    <span class="c1"># Fit the grid search to the data</span>
     <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_chd</span><span class="p">,</span> <span class="n">y_train_chd</span><span class="p">)</span>
-    
-    <span class="c1"># Get the best estimator</span>
     <span class="n">best_classifier</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
-    
-    <span class="c1"># Make predictions using the best model</span>
     <span class="n">y_pred_chd</span> <span class="o">=</span> <span class="n">best_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_chd</span><span class="p">)</span>
-    
-    <span class="c1"># Calculate the accuracy of the classifier</span>
     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_chd</span><span class="p">)</span>
-    
-    <span class="c1"># Create a confusion matrix</span>
     <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_chd</span><span class="p">)</span>
     <span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_chd</span><span class="p">)</span>
     <span class="n">cv_results_dict_val</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">[</span><span class="s1">&#39;mean_test_score&#39;</span><span class="p">]</span>
-    
-    <span class="c1"># Print the evaluation metrics and best parameters</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------- MODEL----------------&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Classifier (Post-Validation):&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Best Parameters:&#39;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
@@ -18091,7 +17949,6 @@ class="
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Evaluation Report:&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
     
-<span class="c1"># Generate a box and whiskers plot for each model</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">cv_results_dict_val</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">vert</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">patch_artist</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cv_results_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">cv_results_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="s1">&#39;vertical&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">)</span>
@@ -18294,39 +18151,22 @@ class="
 <span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
 <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="kn">from</span> <span class="nn">xgboost</span> <span class="kn">import</span> <span class="n">XGBClassifier</span>
-<span class="c1"># ... (other imports, data preprocessing, etc.)</span>
 
 <span class="n">cv_results_dict_val</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">cv_results_dict</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># For storing the performance metrics</span>
+<span class="n">cv_results_dict</span> <span class="o">=</span> <span class="p">{}</span>  
 
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">classifier</span><span class="p">,</span> <span class="n">params</span> <span class="ow">in</span> <span class="n">classifiers_with_params</span><span class="p">:</span>
     <span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">classifier</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-    
-    <span class="c1"># Fit the grid search to the data</span>
     <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_chd</span><span class="p">,</span> <span class="n">y_train_chd</span><span class="p">)</span>
-    
-    <span class="c1"># Get the best estimator</span>
     <span class="n">best_classifier</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
-    
-    <span class="c1"># Wrap the best_classifier with Bagging</span>
     <span class="n">bagging_classifier</span> <span class="o">=</span> <span class="n">BaggingClassifier</span><span class="p">(</span><span class="n">base_estimator</span><span class="o">=</span><span class="n">best_classifier</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-    
-    <span class="c1"># Fit the bagging classifier</span>
     <span class="n">bagging_classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_chd</span><span class="p">,</span> <span class="n">y_train_chd</span><span class="p">)</span>
-    
-    <span class="c1"># Make predictions using the bagging classifier</span>
     <span class="n">y_pred_chd</span> <span class="o">=</span> <span class="n">bagging_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_chd</span><span class="p">)</span>
-    
-    <span class="c1"># Calculate the accuracy</span>
     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_chd</span><span class="p">)</span>
-    
-    <span class="c1"># Create a confusion matrix</span>
     <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_chd</span><span class="p">)</span>
     <span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_chd</span><span class="p">)</span>
     <span class="n">cv_results_dict_val</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">[</span><span class="s1">&#39;mean_test_score&#39;</span><span class="p">]</span>
     <span class="n">cv_results_dict</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span><span class="p">,</span> <span class="s1">&#39;Confusion Matrix&#39;</span><span class="p">:</span> <span class="n">cm</span><span class="p">,</span> <span class="s1">&#39;Report&#39;</span><span class="p">:</span> <span class="n">report</span><span class="p">}</span>
-    
-    <span class="c1"># Print the evaluation metrics and best parameters</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------- MODEL----------------&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Classifier (Post-Validation):&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Best Parameters:&#39;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
@@ -18335,8 +18175,6 @@ class="
     <span class="nb">print</span><span class="p">(</span><span class="n">cm</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Evaluation Report:&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
-
-<span class="c1"># Generate a box and whiskers plot for each model</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">cv_results_dict_val</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">vert</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">patch_artist</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cv_results_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">cv_results_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="s1">&#39;vertical&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">)</span>
@@ -18520,26 +18358,15 @@ class="
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">StackingClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-
-<span class="c1"># Create an empty list to hold the trained classifiers and their names</span>
 <span class="n">trained_classifiers</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">classifier</span><span class="p">,</span> <span class="n">params</span> <span class="ow">in</span> <span class="n">classifiers_with_params</span><span class="p">:</span>
     <span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">classifier</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-    
-    <span class="c1"># Fit the grid search to the data</span>
     <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_chd</span><span class="p">,</span> <span class="n">y_train_chd</span><span class="p">)</span>
-    
-    <span class="c1"># Get the best estimator</span>
     <span class="n">best_classifier</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
-    
-    <span class="c1"># Append the name and best_classifier as a tuple to the list</span>
     <span class="n">trained_classifiers</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">name</span><span class="p">,</span> <span class="n">best_classifier</span><span class="p">))</span>
 
-<span class="c1"># Create the stacking classifier with the trained base classifiers and a final estimator</span>
 <span class="n">stacking_classifier</span> <span class="o">=</span> <span class="n">StackingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="n">trained_classifiers</span><span class="p">,</span> <span class="n">final_estimator</span><span class="o">=</span><span class="n">LogisticRegression</span><span class="p">())</span>
-
-<span class="c1"># Fit the stacking classifier on the training data</span>
 <span class="n">stacking_classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_chd</span><span class="p">,</span> <span class="n">y_train_chd</span><span class="p">)</span>
 </pre></div>
 
@@ -18656,19 +18483,10 @@ Fitting 5 folds for each of 108 candidates, totalling 540 fits
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Make predictions using the stacking classifier</span>
-<span class="n">y_pred_stacking</span> <span class="o">=</span> <span class="n">stacking_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_chd</span><span class="p">)</span>
-
-<span class="c1"># Calculate the accuracy of the stacking classifier</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred_stacking</span> <span class="o">=</span> <span class="n">stacking_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_chd</span><span class="p">)</span>
 <span class="n">accuracy_stacking</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_stacking</span><span class="p">)</span>
-
-<span class="c1"># Create a confusion matrix</span>
 <span class="n">cm_stacking</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_stacking</span><span class="p">)</span>
-
-<span class="c1"># Create a classification report</span>
 <span class="n">report_stacking</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test_chd</span><span class="p">,</span> <span class="n">y_pred_stacking</span><span class="p">)</span>
-
-<span class="c1"># Print the evaluation metrics for the stacking model</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------- STACKING MODEL ----------------&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy:&#39;</span><span class="p">,</span> <span class="n">accuracy_stacking</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Confusion Matrix:&#39;</span><span class="p">)</span>
